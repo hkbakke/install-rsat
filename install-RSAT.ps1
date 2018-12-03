@@ -1,0 +1,1 @@
+Get-WindowsCapability -Online -Name *rsat* | Where-Object {$_.State -notmatch 'Installed'} | Add-WindowsCapability -Online
